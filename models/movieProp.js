@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 //set up Movie Schema
-const movieSchema = new Schema({
+const movie = new Schema({
     movieName: {
         type: String,
         required: true
@@ -18,6 +18,6 @@ const movieSchema = new Schema({
     }
 });
 
-const movieProp = mongoose.model("movieProp", movieSchema);
+const movieProp = mongoose.model("movieProp", movie);
 
 module.exports = movieProp;

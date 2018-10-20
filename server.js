@@ -4,11 +4,10 @@ const express = require("express");
 //body parser
 const bodyParser = require("body-parser");
 
-
 //pull in package for creating MongoDB models
 const mongoose = require("mongoose");
 
-//pull in the index file and all route files within to separate routes from the server file fro code cleanliness
+//pull in the index file and all route files within to separate routes from the server file
 const routes = require("./routes");
 
 //Initialize an instance of the express app
@@ -29,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 //mongoose.connect(
-//    process.env.MONGODB_URI || "mongodb://localhost/real-estate-investment"
+//    process.env.MONGODB_URI || "mongodb://localhost/moviesDB"
 //    );
 
 //Start the Server
