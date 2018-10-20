@@ -1,0 +1,18 @@
+.page-title {
+position:center;
+
+}
+
+
+.quote {
+    width: 30%;
+    color: white;
+    position: right;
+    bottom: 50%;
+    right: 50%;
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
